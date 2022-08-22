@@ -1,0 +1,6 @@
+C:\Users\marlo\source\repos\Incomel\Incomel.Model\bin\Debug\Incomel.Model.dll
+C:\Users\marlo\source\repos\Incomel\Incomel.Model\bin\Debug\Incomel.Model.pdb
+C:\Users\marlo\source\repos\Incomel\Incomel.Model\obj\Debug\Incomel.Model.csproj.AssemblyReference.cache
+C:\Users\marlo\source\repos\Incomel\Incomel.Model\obj\Debug\Incomel.Model.csproj.CoreCompileInputs.cache
+C:\Users\marlo\source\repos\Incomel\Incomel.Model\obj\Debug\Incomel.Model.dll
+C:\Users\marlo\source\repos\Incomel\Incomel.Model\obj\Debug\Incomel.Model.pdb

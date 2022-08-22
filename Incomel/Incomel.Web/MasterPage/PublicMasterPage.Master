@@ -1,0 +1,140 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PublicMasterPage.master.cs" Inherits="Incomel.Web.MasterPage.PublicMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
+
+    <title>Progressus - Free business bootstrap template by GetTemplate</title>
+
+    <link rel="shortcut icon" type="image/ico" href="<% { Response.Write(ConfigurationManager.AppSettings.Get("RutaVirtualWeb")); } %>assets/images/gt_favicon.png" />
+
+    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="<% { Response.Write(ConfigurationManager.AppSettings.Get("RutaVirtualWeb")); } %>assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<% { Response.Write(ConfigurationManager.AppSettings.Get("RutaVirtualWeb")); } %>assets/css/font-awesome.min.css">
+
+    <!-- Custom styles for our template -->
+    <link rel="stylesheet" href="<% { Response.Write(ConfigurationManager.AppSettings.Get("RutaVirtualWeb")); } %>assets/css/bootstrap-theme.css" media="screen">
+    <link rel="stylesheet" href="<% { Response.Write(ConfigurationManager.AppSettings.Get("RutaVirtualWeb")); } %>assets/css/main.css">
+    <link rel="stylesheet" href="<% { Response.Write(ConfigurationManager.AppSettings.Get("RutaVirtualWeb")); } %>assets/css/HoldOn.min.css" rel="stylesheet" />
+    <style>
+        .container-public {
+            margin-top: 140px;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top headroom">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Button for smallest screens -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://wf.incomel.com.gt/imagenes/japon.gif" width="232" height="70">
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="active"><a href="<% { Response.Write(ConfigurationManager.AppSettings.Get("RutaVirtualWeb")); } %>Default.aspx">Inicio</a></li>
+                    <li><a href="">Sobre Nosotros</a></li>
+                    <li><a href="<% { Response.Write(ConfigurationManager.AppSettings.Get("RutaVirtualWeb")); } %>Registrarse.aspx">Registrarse</a></li>
+                    <li><a class="btn" href="<% { Response.Write(ConfigurationManager.AppSettings.Get("RutaVirtualWeb")); } %>Login.aspx">Iniciar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="<% { Response.Write(ConfigurationManager.AppSettings.Get("RutaVirtualWeb")); } %>assets/js/headroom.min.js"></script>
+    <script src="<% { Response.Write(ConfigurationManager.AppSettings.Get("RutaVirtualWeb")); } %>assets/js/jQuery.headroom.min.js"></script>
+    <script src="<% { Response.Write(ConfigurationManager.AppSettings.Get("RutaVirtualWeb")); } %>assets/js/template.js"></script>
+    <script src="<% { Response.Write(ConfigurationManager.AppSettings.Get("RutaVirtualWeb")); } %>assets/js/jquery.min.js"></script>
+    <script src="<% { Response.Write(ConfigurationManager.AppSettings.Get("RutaVirtualWeb")); } %>assets/js/jquery-3.5.1.min.js"></script>
+    <script src="<% { Response.Write(ConfigurationManager.AppSettings.Get("RutaVirtualWeb")); } %>assets/js/sweetalert2.js"></script>
+    <script src="<% { Response.Write(ConfigurationManager.AppSettings.Get("RutaVirtualWeb")); } %>assets/js/HoldOn.min.js"></script>
+    <script src="<% { Response.Write(ConfigurationManager.AppSettings.Get("RutaVirtualWeb")); } %>assets/js/main.js"></script>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <footer id="footer" class="top-space">
+        <div class="footer1">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3 widget">
+                        <h3 class="widget-title">Contacto</h3>
+                        <div class="widget-body">
+                            <p>
+                                +234 23 9873237<br>
+                                <a href="mailto:#">some.email@somewhere.com</a><br>
+                                <br>
+                                234 Hidden Pond Road, Ashland City, TN 37015
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 widget">
+                        <h3 class="widget-title">Siguenos</h3>
+                        <div class="widget-body">
+                            <p class="follow-me-icons">
+                                <a href=""><i class="fa fa-twitter fa-2"></i></a>
+                                <a href=""><i class="fa fa-dribbble fa-2"></i></a>
+                                <a href=""><i class="fa fa-github fa-2"></i></a>
+                                <a href=""><i class="fa fa-facebook fa-2"></i></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 widget">
+                        <h3 class="widget-title">Incomel</h3>
+                        <div class="widget-body">
+                            <p>Visión y Misión de Incomel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer2">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 widget">
+                        <div class="widget-body">
+                            <p class="simplenav">
+                                <a href="#">Inicio</a> | 
+								<a href="about.html">Sobre Nosostros</a> |
+								<a href="sidebar-right.html">Registrarse</a> |
+								<b><a href="signup.html">Iniciar sesión</a></b>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 widget">
+                        <div class="widget-body">
+                            <p class="text-right">
+                                Incomel &copy; 2022, todos los derrechos reservados. Diseñado por <a href="https://wf.incomel.com.gt/" rel="designer">Incomel</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+    <div id="preloader"></div>
+</body>
+</html>
